@@ -1,0 +1,49 @@
+<html dir="rtl" lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stories</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="images/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="inputs">
+    <textarea id="textarea" placeholder="اكتب النص هنا..."></textarea>
+    <input type="number" id="font-size" placeholder="الحجم">
+    <select id="font-family">
+      <option value="noto">noto</option>
+      <option value="pdms">pdms</option>
+      <option value="naskh">naskh</option>
+      <option value="hafs">hafs</option>
+      <option value="qalam">qalam</option>
+      <option value="ibm">ibm</option>
+    </select>
+    <select id="font-weight">
+      <option value="100">100</option>
+      <option value="200">200</option>
+      <option value="300">300</option>
+      <option value="400">400</option>
+      <option value="500">500</option>
+      <option value="600">600</option>
+      <option value="700">700</option>
+      <option value="800">800</option>
+      <option value="900">900</option>
+    </select>
+    <input type="color" id="color">
+    <input type="color" id="bg-color">
+    <button id="button">تحميل</button>
+  </div>
+  <hr>
+  <br>
+  <div id="image">
+    صورة
+  </div>
+  <script src="js/html2canvas.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
