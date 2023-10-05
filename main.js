@@ -7,15 +7,6 @@ const bgColor = document.getElementById("bg-color");
 const image = document.getElementById("image");
 const button = document.getElementById("button");
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-
 window.onload = () => {
   if (localStorage.getItem("text")) {
     textarea.value = localStorage.getItem("text");
@@ -65,4 +56,13 @@ function saveAs(uri, filename) {
   } else {
     window.open(uri);
   }
+}
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
 }
