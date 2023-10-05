@@ -17,7 +17,7 @@ const assets = [
   "/fonts/pdms.ttf",
   "/fonts/qalam.ttf"
 ]
-/*
+
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
     caches.open(stories).then(cache => {
@@ -33,4 +33,3 @@ self.addEventListener("fetch", fetchEvent => {
     })
   )
 })
-*/

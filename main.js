@@ -6,7 +6,7 @@ const color = document.getElementById("color");
 const bgColor = document.getElementById("bg-color");
 const image = document.getElementById("image");
 const button = document.getElementById("button");
-/*
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
@@ -15,7 +15,7 @@ if ("serviceWorker" in navigator) {
       .catch(err => console.log("service worker not registered", err))
   })
 }
-*/
+
 window.onload = () => {
   if (localStorage.getItem("text")) {
     textarea.value = localStorage.getItem("text");
